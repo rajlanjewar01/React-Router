@@ -4,7 +4,7 @@ interface SearchResponse {
     objects: {
         pacakge: {
             name: string;
-            desctiption: string;
+            description: string;
             version: string;
             keywords: string[];
         }
@@ -18,7 +18,7 @@ export async function searchPackages(term: string): Promise<PackageSummery[]> {
     const data: SearchResponse = await response.json();
 
     return data.objects.map(
-        ({ package: { name, description, version, keywords }}) => {
+        ({ pacakge: { name, description, version, keywords }}) => {
         return {
             name,
             description,

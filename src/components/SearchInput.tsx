@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { VscSearch } from 'react-icons/vsc';
 
 export default function SearchInput() {
 	const [term, setTerm] = useState('');
