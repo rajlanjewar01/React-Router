@@ -13,7 +13,7 @@ export default function PackageListItem({ pack }: PackageListItemProps) {
 	});
 
 	return <div className="card p-2 mb-2">
-		<div className="card-body d-flex justify-content-between lign-items-center">
+		<div className="card-body d-flex justify-content-between align-items-center">
 			<div>
 				<h5 className="card-title">
 					<Link to={`/packages/${pack.name}`}>
@@ -27,7 +27,7 @@ export default function PackageListItem({ pack }: PackageListItemProps) {
 				{ renderedKeywords }
 			</div>
 			<div className="mt-2">
-				<Link to={`packages/${pack.name}`} className="btn btn-sm btn-warning">
+				<Link to={`/packages/${pack.name}`} className="btn btn-sm btn-warning">
 					View
 				</Link>
 			</div>

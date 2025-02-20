@@ -17,7 +17,7 @@ export default function SearchInput() {
 				<input 
 					type='text'
 					className='form-control'
-					placeholder='Search NPM packages'
+					placeholder='Search NPM packages.. e.g react, vite, axios'
 					value={term}
 					onChange={e => setTerm(e.target.value)}
 				/>

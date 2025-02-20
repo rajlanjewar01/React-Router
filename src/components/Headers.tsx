@@ -3,14 +3,14 @@ import SearchInput from './SearchInput';
 
 export default function Headers() {
 	return <> 
-		<header className="navbar navbar-expand-lg navbar-light navbar-end bg-white">
-			<nav className="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal w-100">
-				<div className="collapse navbar-collapse">
-					<ul className="navbar-nav  d-flex align-items-center justify-content-between w-100">
+		<header className="navbar navbar-expand-lg navbar-light navbar-end">
+			<nav className="w-100">
+				<div>
+					<ul className="navbar-nav w-100 d-flex justify-content-between align-item-center">
 						<li className='nav-item'>
-							<Link to="/">NPM Registry</Link>
+							<Link to="/" className="text-decoration-none text-warning"><h4 className="text-uppercase">NPM Registry🛠 </h4></Link>
 						</li>
-						<li className="nav-item w-50">
+						<li className="nav-item w-75">
 							<SearchInput />
 						</li>
 					</ul>
