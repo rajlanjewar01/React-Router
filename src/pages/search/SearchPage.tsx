@@ -6,6 +6,7 @@ export default function SearchPage() {
     const { searchResults } = useLoaderData() as SearchLoaderResult;
 
     const renderedResults = searchResults.map((result) => {
+        console.log('111 result', result);
         return <PackageListItems pack={result} key={result.name} />
     });
 

@@ -2,7 +2,7 @@ import type { PackageSummery } from '../types/packageSummery';
 
 interface SearchResponse {
     objects: {
-        pacakge: {
+        package: {
             name: string;
             description: string;
             version: string;
@@ -17,8 +17,7 @@ export async function searchPackages(term: string): Promise<PackageSummery[]> {
     );
     const data: SearchResponse = await response.json();
 
-    return data.objects.map(
-        ({ pacakge: { name, description, version, keywords }}) => {
+    return data.objects.map(({ package: { name, description, version, keywords }}) => {
         return {
             name,
             description,
